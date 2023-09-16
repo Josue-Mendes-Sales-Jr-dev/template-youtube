@@ -29,7 +29,7 @@ export default function Id(){
      }
     return(
       <>
-     <div className="w-[100vw] h-[100vh] mt-[10vh] border-box overflow-x-hidden overflow-y-auto  scrollbar scrollbar-h-[10px] scrollbar-w-[10px]  scrollbar-thumb-rounded-xl scrollbar-thumb-gray-400">
+     <div className="w-[100vw] h-[100vh] mt-[10vh] border-box overflow-x-hidden overflow-y-auto  scrollbar-hide sm:scrollbar scrollbar-h-[10px] scrollbar-w-[10px]  scrollbar-thumb-rounded-xl scrollbar-thumb-gray-400">
           <Header className="fixed top-0 "/>
             <div className="w-[100vw] min-h-[75vh] flex flex-col lg:flex-row items-center justify-center gap-5 ">
                 <div className="bg-black sm:rounded-xl overrflow-hidden w-[100vw] lg:w-[52vw] h-[40vh] sm:h-[68vh] flex flex-col items-center justify-center gap-5">
@@ -43,7 +43,7 @@ export default function Id(){
                         </h1>
                         <PerfilCard />
                 </div>
-                <div className="fixed top-[90vh] flex items-center justify-between rounded-2xl px-5 w-[95%] h-[50px] bg-black text-white lg:hidden" id="show">
+                <div className="fixed top-[88vh] flex items-center justify-between rounded-2xl px-5 w-[95%] h-[50px] bg-black text-white lg:hidden" id="show">
                          <div className="flex flex-col">
                             <h1>
                             Mix de Arctic Monkeys - Do wanna now 
@@ -56,9 +56,8 @@ export default function Id(){
                             ^
                          </button>
                 </div>
-                <div className=" hidden fixed top-[50vh] lg:static sm:flex bg-white border border-gray-400 p-1 border-box mb-10 sm:mb-0 rounded-xl" id="box">
-                    <div className="w-[97vw] lg:w-[28vw] h-[48] lg:h-[67vh]  rounded-xl border-box overflow-hidden overflow-y-auto  scrollbar scrollbar-h-[10px] scrollbar-w-[10px] scrollbar-thumb-rounded-xl scrollbar-thumb-gray-400">
-                        <div className=" flex items-center justify-between px-5 w-[100%] h-[50px] bg-black text-white">
+                <div className=" hidden fixed top-[50vh] lg:static lg:flex flex-col bg-white border border-gray-400 p-1 border-box mb-10 sm:mb-0 rounded-xl" id="box">
+                     <div className=" flex items-center justify-between px-5 w-[100%] h-[50px] lg:h-[3rem] bg-black text-white rounded-t-xl">
                          <div className="flex flex-col">
                             <h1>
                             Mix de Arctic Monkeys - Do wanna now 
@@ -70,7 +69,9 @@ export default function Id(){
                          <button onClick={hideBtn}>
                             X
                          </button>
-                        </div>
+                    </div>
+                    <div className="w-[97vw] lg:w-[28vw] h-[39.5vh] lg:h-[59.5vh]  rounded-xl border-box overflow-hidden overflow-y-auto  scrollbar scrollbar-h-[10px] scrollbar-w-[10px] scrollbar-thumb-rounded-xl scrollbar-thumb-gray-400">
+                        
                             {
                                 Data.map(data=>(
                                     // eslint-disable-next-line react/jsx-key
