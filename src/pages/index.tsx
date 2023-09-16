@@ -1,15 +1,21 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import { Layout } from '@/components/layout'
-
-const inter = Inter({ subsets: ['latin'] })
+import { Card } from '@/components/card'
+import {Data} from '../../src/components/data/index'
 
 export default function Home() {
+
+  
   return (
          <>
-         <Layout>
-
+         <Layout className='relative'>
           
+        {
+          Data.map(data=>(
+            // eslint-disable-next-line react/jsx-key
+           
+              <Card key={data.title} title={data.title} src={data.src} subtitle={data.views}/>
+          ))
+        }
          </Layout>
          </>
   )
