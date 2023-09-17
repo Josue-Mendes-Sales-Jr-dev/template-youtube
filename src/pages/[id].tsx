@@ -31,7 +31,7 @@ export default function Id(){
      <div className="w-[100vw] h-[100vh] sm:mt-[2vh] border-box overflow-x-hidden overflow-y-auto  scrollbar-hide sm:scrollbar scrollbar-h-[10px] scrollbar-w-[10px]  scrollbar-thumb-rounded-xl scrollbar-thumb-gray-400">
           
             <div className="w-[100vw] min-h-[75vh] flex flex-col lg:flex-row items-center justify-center gap-5 ">
-                <div className="bg-black sm:rounded-xl overrflow-hidden w-[100vw] sm:w-[90vw] lg:w-[52vw] h-[40vh] sm:h-[60vh] lg:h-[68vh] flex flex-col items-center justify-center gap-5">
+                <div className="bg-black sm:rounded-xl overrflow-hidden w-[100vw] sm:w-[90vw] lg:w-[52vw] h-[44vh] sm:h-[60vh] lg:h-[68vh] flex flex-col items-center justify-center gap-5">
                            <iframe className={`sm:rounded-xl w-[100%] h-[100%] bg-gray-200`}
                            src="https://www.youtube.com/embed/W2QeQ9ZufAk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen>
                            </iframe>
@@ -46,15 +46,15 @@ export default function Id(){
                     <MixCard className="fixed top-[88vh] flex items-center justify-between rounded-2xl px-5 w-[90%] h-[50px] bg-black opacity-90 text-white lg:hidden"
                      onclick={showBtn} item="^"/>                      
                 </div>
-                <div className=" hidden fixed top-[42vh] lg:static lg:flex flex-col bg-white border border-gray-400 p-1 border-box mb-10 sm:mb-0 " id="box">
+                <div className=" hidden fixed top-[44.5vh] z-20 lg:static lg:flex flex-col bg-white border border-gray-400 p-1 border-box mb-10 sm:mb-0 " id="box">
                      <MixCard className="flex items-center justify-between px-5 w-[100%] h-[50px] lg:h-[3rem] bg-black text-white "
                      onclick={hideBtn} item="X"/>  
-                    <div className="w-[97vw] lg:w-[28vw] h-[50.5vh] lg:h-[59.5vh]  rounded-xl border-box overflow-hidden overflow-y-auto  scrollbar scrollbar-h-[10px] scrollbar-w-[10px] scrollbar-thumb-rounded-xl scrollbar-thumb-gray-400">
+                    <div className="w-[97vw] lg:w-[28vw] h-[47vh] lg:h-[59.5vh]  rounded-xl border-box overflow-hidden overflow-y-auto  scrollbar scrollbar-h-[10px] scrollbar-w-[10px] scrollbar-thumb-rounded-xl scrollbar-thumb-gray-400">
                         
                             {
                                 Data.map(data=>(
                                     // eslint-disable-next-line react/jsx-key
-                                    <CardId className="flex-row gap-2 w-[97%] h-[5rem] m-2 " video="h-[80%] rounded-xl bg-gray-300" className2=" w-[8rem] h-[6rem] rounded-xl flex items-center justify-center overflow-hidden" text1="text-[.8rem]" text2="text-[12px]" text3="text-[12px pb-3]" perfil="w-[1.5rem] h-[1.5rem]" box2="h-[5rem] py-4" title={data.title} subtitle={data.views}/> // src={data.src}/>
+                                    <CardId className="flex-row gap-2 w-[97%] h-[5rem] m-2 " video="h-[80%] rounded-xl bg-gray-300" className2=" w-[8rem] h-[6rem] rounded-xl flex items-center justify-center overflow-hidden" text1="text-[.8rem]" text2="text-[12px]" text3="text-[12px pb-3]" perfil="w-[1.5rem] h-[1.5rem]" box2="h-[5rem] py-4" title={data.title} subtitle={data.views} src={data.src}/>
                                 ))
                                }
                     </div>
@@ -77,7 +77,7 @@ export default function Id(){
                        {
                         Data.map(data=>(
                             // eslint-disable-next-line react/jsx-key
-                            <CardId  className="flex-row gap-2 h-[6rem]" box="gap-1" className2="rounded-2xl w-[12rem] h-[5.5rem] bg-gray-200" title={data.title} subtitle={data.views}/> // src={data.src}/>
+                            <CardId  className="flex-row gap-2 h-[6rem]" box="gap-1" className2="rounded-2xl w-[12rem] h-[5.5rem] bg-gray-200" title={data.title} subtitle={data.views} src={data.src}/>
                         ))
                        }
               </div>
@@ -87,7 +87,7 @@ export default function Id(){
                        {
                         Data.map(data=>(
                             // eslint-disable-next-line react/jsx-key
-                            <CardId  className="flex-row gap-2 h-[6rem]" box="gap-1" className2="rounded-2xl w-[12rem] h-[5.5rem] bg-gray-200" title={data.title} subtitle={data.views}/> // src={data.src}/>
+                            <CardId  className="flex-row gap-2 h-[6rem]" box="gap-1" className2="rounded-2xl w-[12rem] h-[5.5rem] bg-gray-200" title={data.title} subtitle={data.views} src={data.src}/>
                         ))
                        }
               </div>

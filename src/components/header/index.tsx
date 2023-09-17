@@ -28,8 +28,8 @@ export const Header =(props:IHeaderProps)=>{
         <>
              <div className={`w-[100vw] h-[10vh] flex items-center justify-center p-2 ${props.className}`}>
                 <div className="w-[16%] h-[100%]  flex items-center  gap-5 text-[1.3rem]">
-                 <GiHamburgerMenu/>
-                 <span className="hidden md:flex items-center justify-center gap-1">
+                 <GiHamburgerMenu className="hidden sm:block"/>
+                 <span className="pl-3 sm:pl-0 flex items-center justify-center gap-1">
                     <AiOutlineYoutube className='text-[2rem] bg-red-500 rounded-lg'/>
                     <strong>
 
