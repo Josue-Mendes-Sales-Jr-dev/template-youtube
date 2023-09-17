@@ -58,7 +58,7 @@ export const Card =(props:ICardProps)=>{
          </Link>
 
          <Link href={props.title} className="hidden xl:flex flex-col items-center justify-center m-2 w-[31.5%] h-[18rem] rounded-lg  border-box overflow-hidden ">
-            <div className="w-[100%] h-[15rem] bg-blue-500 rounded-xl">
+            <div className="w-[100%] h-[15rem] bg-red-500 rounded-xl">
             <iframe className={` w-[100%] h-[100%] rounded-xl`} src={props.src}
                 title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>

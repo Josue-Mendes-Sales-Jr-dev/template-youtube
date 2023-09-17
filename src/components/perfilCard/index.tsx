@@ -12,9 +12,11 @@ interface ICardProps{
     title?: string
     src?: any
     subtitle?: string
+    textTitle?: any
     text1?: string
     text2?: string
     box2?: string
+    box?: string
     video?: string
     perfil?: string
     views?: string
@@ -30,7 +32,7 @@ export const PerfilCard =(props:ICardProps)=>{
        setCount((e)=>(e=e+1))
    }
    const remove=()=>{
-       setCountR((e)=>(e=e+1))
+       setCount((e)=>(e=e-1))
    }
 
   
@@ -43,21 +45,21 @@ export const PerfilCard =(props:ICardProps)=>{
               <div  className="flex w-[35%] items-center justify-center gap-1 ">
                 <span className="ml-[-1rem] w-[2.25rem] h-[2.25rem] rounded-full bg-black">
                 </span>
-                 <h1 className="flex flex-col items-center justify-center  w-[100%] sm:w-[80%]">
-                  <strong>One piece </strong>
-                  <p className="text-[.55rem] pl-2 lg:text-[.7rem] w-[100%]">
+                 <h1 className="flex flex-col pl-2 justify-center w-[100%] sm:w-[80%] ">
+                  <strong className="text-[.8rem] sm:text-[1rem]">{props.textTitle}</strong>
+                  <p className="text-[.55rem]  lg:text-[.7rem] w-[100%]">
                     4,95 mi de inscritos
                   </p>
                 </h1>
               </div>
 
-              <span className="hidden lg:block bg-black py-1 text-[1rem] px-2 lg:mr-14 text-center w-[8rem] rounded-xl text-white ">
+              <span className="hidden max-w-[400px]:flex bg-black py-1 text-[1rem]  lg:mr-14 text-center w-[9rem] rounded-xl text-white ">
                 inscrever-se
               </span>
               
               <div className="flex items-center justify-center">              
                <button className="flex gap-2 items-center justify-center rounded-l-xl px-2 py-1 bg-gray-100 hover:bg-gray-200 w-[5.5rem]"><AiOutlineLike onClick={add}/><span className="text-[1rem]"> {count} mi </span></button>
-               <button className="flex gap-2 items-center justify-center rounded-r-xl px-2 py-1 bg-gray-100 hover:bg-gray-200 w-[5rem]"><AiOutlineDislike onClick={remove}/> <span className="text-[1rem]">{countR} mi </span></button>
+               <button className="flex gap-2 items-center justify-center rounded-r-xl px-2 py-[8px] bg-gray-100 hover:bg-gray-200 w-[2rem]"><AiOutlineDislike className="text-[1rem]" onClick={remove}/> </button>
               </div>
 
               
@@ -68,7 +70,7 @@ export const PerfilCard =(props:ICardProps)=>{
                 <TfiDownload/> Dnownload
               </span>
             </div>
-            <div className="flex items-center justify-center w-[100%] h-[5rem] mt-[1rem] sm:mt-0">
+            <div className={`${props.box} flex items-center justify-center w-[100%] h-[5rem] mt-[1rem] sm:mt-0`}>
             <span className="inline ml-[20px] sm:ml-0 w-[95%] bg-gray-100 hover:bg-gray-300 px-5 py-1 rounded-lg"><strong>1,4bi de visualizações há 8 anos </strong>
             #className flex flex-col items-center justify-cente 
             className flex flex-col items-center justify-center
