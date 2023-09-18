@@ -13,7 +13,7 @@ export default function Home() {
           Data.map(data=>(
             // eslint-disable-next-line react/jsx-key
            
-              <Card key={data.title} title={data.title} subtitle={data.views}/> // src={data.src} />
+              <Card key={data.title} title={data.title} subtitle={data.views} src={data.src} />
           ))
         }
          </Layout>

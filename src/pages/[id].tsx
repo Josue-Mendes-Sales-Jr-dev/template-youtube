@@ -46,8 +46,8 @@ export default function Id(){
                     <MixCard className="fixed top-[88vh] flex items-center justify-between rounded-2xl px-5 w-[90%] h-[50px] bg-black opacity-90 text-white lg:hidden"
                      onclick={showBtn} item="^"/>                      
                 </div>
-                <div className=" hidden fixed top-[44.5vh] z-20 lg:static lg:flex flex-col bg-white border border-gray-400 p-1 border-box mb-10 sm:mb-0 " id="box">
-                     <MixCard className="flex items-center justify-between px-5 w-[100%] h-[50px] lg:h-[3rem] bg-black text-white "
+                <div className=" hidden fixed top-[44.5vh] z-20 lg:static lg:flex flex-col bg-white border border-gray-400 p-1 border-box mb-10 sm:mb-0 lg:rounded-xl" id="box">
+                     <MixCard className="flex items-center justify-between px-5 w-[100%] h-[50px] lg:h-[3rem] bg-black text-white lg:rounded-t-xl"
                      onclick={hideBtn} item="X"/>  
                     <div className="w-[97vw] lg:w-[28vw] h-[47vh] lg:h-[59.5vh]  rounded-xl border-box overflow-hidden overflow-y-auto  scrollbar scrollbar-h-[10px] scrollbar-w-[10px] scrollbar-thumb-rounded-xl scrollbar-thumb-gray-400">
                         
